@@ -1,0 +1,7 @@
+#!/bin/bash
+
+sudo port selfupdate && sudo port upgrade outdated
+brew update
+searchsploit -u
+msfupdate
+pip3 install -U -q $(pip3 freeze | cut -d\= -f 1)
